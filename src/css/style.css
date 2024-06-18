@@ -65,6 +65,8 @@ nav {
   justify-content: space-between;
   padding-left: 5rem;
   background-color: rgb(31, 31, 44);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
   & .logo {
     cursor: pointer;
@@ -87,7 +89,7 @@ nav {
         position: relative;
         &:hover::after {
           transform: scaleX(1);
-          transform-origin: bottom left; 
+          transform-origin: bottom left;
         }
         &:after {
           content: "";
@@ -115,7 +117,7 @@ nav {
   margin-top: 8%;
 }
 
-button {
+.botao-main {
   width: 20vw;
   background-color: transparent;
   color: white;
@@ -128,7 +130,7 @@ button {
   font-family: "Hind Madurai";
   cursor: pointer;
   transition-timing-function: ease-out;
-  transition: 200ms;
+  transition: 150ms;
   transform: translateX(0);
   transition-property: background-color, color, transform;
 
@@ -140,6 +142,34 @@ button {
 }
 
 /*! seção podcast */
+
+audio {
+  width: 30%;
+  &::-webkit-media-controls-mute-button {
+    background-color: #ffc107f3;
+    border-radius: 50%;
+  }
+  &::-webkit-media-controls-play-button {
+    background-color: #ffc107f3;
+    border-radius: 50%;
+  }
+  &::-webkit-media-controls-panel {
+    background-color: #1f1f2c;
+  }
+  &::-webkit-media-controls-current-time-display {
+    color: #ffc107;
+  }
+  &::-webkit-media-controls-time-remaining-display {
+    color: #ffc107c4;
+  }
+  &::-webkit-media-controls-timeline {
+    background-color: #ffc107;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 /*  
 .podcast {
   background-color: #ffc61a;

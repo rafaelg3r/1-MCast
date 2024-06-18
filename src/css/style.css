@@ -47,7 +47,7 @@ a:visited {
 /*? Start */
 
 .container {
-  background-image: url(/src/img/banner-MCast.jpg);
+  background-image: url(../img/banner-MCast.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;

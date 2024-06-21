@@ -213,6 +213,24 @@ audio {
 
 /** seção grupo */
 
+.secao-grupo-header {
+  background-color: #1f1f2c;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  & h2 {
+    font-weight: 600;
+  }
+   & p {
+    width: 60rem;
+    text-align: center;
+    font-weight: 200;
+    font-size: 2rem;
+   }
+}
+
 .secao-grupo {
   height: fit-content;
   display: flex;
@@ -252,7 +270,7 @@ audio {
 
 .secao-sobre {
   height: 40rem;
-  background-color: #090930;
+  background-color: #1f1f2c;
 }
 
 /*! footer */

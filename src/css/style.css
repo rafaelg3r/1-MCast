@@ -7,6 +7,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%;
+  /* 10px */
 }
 
 body {
@@ -181,18 +182,22 @@ nav {
     font-size: 2vw;
     font-weight: 600;
     padding-top: 5rem;
+    color: #ffc107;
   }
   & p {
     width: 45vw;
     text-align: center;
     font-weight: 200;
     font-size: 1.4vw;
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
   & hr {
     margin-top: 5rem;
     width: 50vw;
+    padding: 0.2rem;
+    border: none;
     border-radius: 50%;
+    background-color: #ffc107;
   }
 }
 
@@ -228,12 +233,15 @@ nav {
       padding: 1rem;
       filter: drop-shadow(5px 5px 10px #00000059);
     }
-    & :nth-child(3) { 
+    & :nth-child(3) {
       padding-top: 3rem;
+    }
+    & :nth-last-child(1) {
+      padding-bottom: 2rem;
     }
     & p {
       align-self: self-start;
-      padding: 0.2rem;
+      padding: 0.5rem;
       margin-left: 1.7rem;
     }
     & h3 {
@@ -250,6 +258,7 @@ nav {
 .cards-textos {
   display: flex;
   flex-flow: row;
+  width: 100%;
 }
 
 .descricao-individual {
@@ -295,7 +304,7 @@ audio {
 
 .podcast {
   background-color: #fec619;
-  height: 50rem;
+  height: 60rem;
   padding-top: 6rem;
   display: flex;
 
@@ -304,6 +313,7 @@ audio {
     flex-flow: column;
     gap: 2rem;
     align-items: center;
+    padding-top: 3.85rem;
     & p {
       margin-left: 1rem;
       margin-right: 1rem;
@@ -315,7 +325,7 @@ audio {
     }
     & h2 {
       text-align: center;
-      font-size: rem;
+      font-size: 3rem;
 
       color: rgba(26, 22, 0, 0.322);
       text-shadow: 2px 2px 3px #00000020;
@@ -331,7 +341,7 @@ audio {
 /*? seção sobre */
 
 .secao-sobre {
-  height: 40rem;
+  height: fit-content;
   background-color: #1f1f2c;
   align-items: center;
   display: flex;

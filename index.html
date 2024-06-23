@@ -11,13 +11,19 @@
     <title>1º MCast</title>
   </head>
   <body>
-    <main class="container">
+    <main class="container" id="home">
       <nav>
-        <img src="src/img/2.png" alt="logo do 1º MCast" class="logo" />
+        <a href="#home"
+          ><img src="src/img/2.png" alt="logo do 1º MCast" class="logo"
+        /></a>
         <ul>
-          <li><a href="#">Podcast</a></li>
-          <li><a href="#">Grupo</a></li>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#grupo">Grupo</a></li>
+          <li><a href="#podcast">Podcast</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <button class="botao-main botao-contato">
+            <a href="#contato" class="contato-link">Contato</a>
+          </button>
         </ul>
       </nav>
       <div class="conteudo">
@@ -26,10 +32,69 @@
           Aqui você encontra um projeto dedicado a realização de um trabalho
           escolar com o tema "Podcast".
         </p>
-        <button class="botao-main">Ir para o Podcast</button>
+        <button class="botao-main">
+          <a href="#podcast">Ir para o Podcast</a>
+        </button>
       </div>
     </main>
-    <section class="podcast">
+    <section class="secao-grupo-header" id="grupo">
+      <h2>QUEM SOMOS?</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem
+        sequi doloremque quas aliquam consectetur, nemo quaerat minus deleniti
+        temporibus molestiae quam error, reiciendis enim. Nam optio nihil odio
+        architecto!
+      </p>
+      <hr />
+    </section>
+
+    <section class="secao-grupo">
+      <div class="cards-textos">
+        <div class="descricao-pessoa">
+          <img src="src/img/boy.png" alt="" />
+          <h3>Rafael da Costa Vedana</h3>
+          <p>- 16 anos</p>
+          <p>- Desenvolvedor Web</p>
+          <p>- Revisor</p>
+        </div>
+        <p class="descricao-individual">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          voluptatum soluta ratione nisi deserunt et, eos dolores atque optio
+          quaerat magni nesciunt dignissimos quidem expedita non saepe deleniti.
+          Illo, distinctio.
+        </p>
+      </div>
+      <div class="cards-textos">
+        <p class="descricao-individual texto-b">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          voluptatum soluta ratione nisi deserunt et, eos dolores atque optio
+          quaerat magni nesciunt dignissimos quidem expedita non saepe deleniti.
+          Illo, distinctio.
+        </p>
+        <div class="descricao-pessoa reverse">
+          <img src="src/img/woman.png" alt="" />
+          <h3>Bianca Maisa Martins</h3>
+          <p>- 16 anos</p>
+          <p>- Anfitriã</p>
+          <p>- Roterista</p>
+        </div>
+      </div>
+      <div class="cards-textos">
+        <div class="descricao-pessoa">
+          <img src="src/img/woman-blonde.png" alt="" />
+          <h3>Rafaela Kosztozycki</h3>
+          <p>- 16 anos</p>
+          <p>- covidada</p>
+        </div>
+        <p class="descricao-individual">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          voluptatum soluta ratione nisi deserunt et, eos dolores atque optio
+          quaerat magni nesciunt dignissimos quidem expedita non saepe deleniti.
+          Illo, distinctio.
+        </p>
+      </div>
+    </section>
+    <section class="podcast" id="podcast">
       <div class="podcast-mini-container">
         <h2>Melhorias escolares ep - 01</h2>
 
@@ -51,40 +116,25 @@
         alt="Imagem não carregada"
       />
     </section>
-    <section class="secao-grupo-header">
-      <h2>QUEM SOMOS?</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem sequi doloremque quas aliquam consectetur, nemo quaerat minus deleniti temporibus molestiae quam error, reiciendis enim. Nam optio nihil odio architecto!</p>
+
+    <section class="secao-sobre" id="sobre">
+      <h2>SOBRE</h2>
+      <p>
+        Nosso podcast nasceu da vontade de trazer discussões profundas e
+        informativas sobre temas variados, desde cultura e ciência até
+        atualidades e entretenimento. Cada episódio é cuidadosamente planejado e
+        produzido para oferecer aos nossos ouvintes uma experiência rica e
+        envolvente. Entrevistamos especialistas, compartilhamos histórias
+        inspiradoras e abordamos questões que impactam o nosso dia a dia.
+      </p>
+      <p>
+        Com uma abordagem dinâmica e inclusiva, buscamos não apenas informar,
+        mas também provocar reflexões e debates. Nosso compromisso é com a
+        verdade, a diversidade de opiniões e a promoção de um espaço seguro para
+        a troca de ideias. Acreditamos que, através do nosso podcast, podemos
+        contribuir para uma sociedade mais consciente e bem informada.
+      </p>
     </section>
-    <section class="secao-grupo">
-      <div class="descricao-pessoa">
-        <img src="src/img/boy.png" alt="" />
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus
-          amet, beatae tempore ratione aut dolorum officiis nihil nesciunt
-          minima eaque! Illo aperiam in dolores quasi placeat? Harum enim
-          architecto vero.
-        </p>
-      </div>
-      <div class="descricao-pessoa">
-        <img src="src/img/woman.png" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
-          eveniet hic quasi explicabo et omnis esse fugiat ipsam corporis
-          quibusdam. Saepe veniam mollitia necessitatibus, sapiente voluptatem
-          quod iste unde eum!
-        </p>
-      </div>
-      <div class="descricao-pessoa">
-        <img src="src/img/woman-blonde.png" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
-          eveniet hic quasi explicabo et omnis esse fugiat ipsam corporis
-          quibusdam. Saepe veniam mollitia necessitatibus, sapiente voluptatem
-          quod iste unde eum!
-        </p>
-      </div>
-    </section>
-    <section class="secao-sobre"></section>
     <footer>
       <small>&copy; Copyright 2024, Rafael da Costa Vedana</small>
     </footer>

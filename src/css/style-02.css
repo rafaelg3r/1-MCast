@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  /* 10px */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  background-color: #090930;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5rem;
+  background-color: #090930;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  & .logo {
+    cursor: pointer;
+    width: 4.5vw;
+  }
+
+  & ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 6rem;
+    & li {
+      display: inline-block;
+      margin: 1% 2%;
+      & a {
+        font-size: 1.3vw;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        position: relative;
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #ffc107;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85.5vh;
+  background-color: #20232f;
+  & .contact h2 {
+    font-size: 4rem;
+    color: #ededed;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  & .contact form {
+    width: 60rem;
+    text-align: center;
+    & .input-box {
+      display: flex;
+      justify-content: space-between;
+    }
+    & .field .item {
+      width: 100%;
+      padding: 1.8rem;
+      background: transparent;
+      border: 2px solid #ffc107;
+      outline: none;
+      border-radius: 6px;
+      font-size: 1.6rem;
+      color: #ededed;
+      margin: 1.2rem 0;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+    & .textarea-field .item {
+      resize: none;
+    }
+  }
+}
+
+button {
+  padding: 1.2rem 3.2rem;
+  background: #ffc107;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 1rem #ffc107;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #090930;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  transition: transform 350ms;
+  transition-property: box-shadow, transform ;
+  &:hover {
+    transform: scale(1.12);
+    box-shadow: none;
+  }
+}
+
+footer p {
+  text-align: center;
+  color: #ffc107;
+  font-size: 1.4rem;
+  padding: 1rem;
+}

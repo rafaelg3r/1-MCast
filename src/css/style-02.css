@@ -114,7 +114,7 @@ button {
   border: none;
   outline: none;
   border-radius: 6px;
-  box-shadow: 0 0 1rem #ffc107;
+ 
   cursor: pointer;
   font-size: 1.6rem;
   font-weight: 600;
@@ -125,7 +125,7 @@ button {
   transition-property: box-shadow, transform ;
   &:hover {
     transform: scale(1.12);
-    box-shadow: none;
+    box-shadow: 0 0 1rem #ffc107; 
   }
 }
 
